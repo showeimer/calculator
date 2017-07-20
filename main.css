@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  font-family: Helvetica;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 2.5% 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+button, #output {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: .5px;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  outline: transparent;
+}
+
+button {
+  justify-content: center;
+  background-color: #7E8D85;
+}
+
+#output {
+  justify-content: flex-end;
+  width: 500px;
+  height: 125px;
+  padding: 0 5%;
+  background-color: #4A5043;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 25px 25px 0 0;
+  font-size: 3rem;
+  overflow: auto;
+}
+
+#zero {
+  border-radius: 0 0 0 25px;
+}
+
+#clear {
+  width: 200px;
+  background-color: #C9CBA3;
+  color: white;
+  border: transparent;
+  border-radius: 0 0 25px 0;
+}
+
+.operator {
+  color: black;
+  background-color: #F4F1BB;
+}
+
+/* HOVER STYLING*/
+
+button:hover {
+  cursor: pointer;
+}
+
+.digit:hover {
+  background-color: #B3BFB8;
+}
+
+.operator:hover {
+  color: white;
+}
+
+#clear:hover {
+  color: black;
+  background-color: #F4F1BB;
+}
